@@ -13,7 +13,7 @@ import pandas as pd
 
 load_dotenv()
 os.getenv("GOOGLE_API_KEY")
-genai.configure(api_key='AIzaSyDMPPvASvD28fUvAnjNny3OH8PuFa0PKl0')
+genai.configure(api_key=os.getenv("GOOGLE_API_KEY"))
 
 
 def get_pdf_text(pdf_docs):
